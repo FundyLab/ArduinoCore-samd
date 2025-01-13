@@ -1,11 +1,21 @@
-# Arduino Core for SAMD21 and SAMD51 CPU
-
-[![Build Status](https://github.com/adafruit/ArduinoCore-samd/workflows/Build/badge.svg)](https://github.com/adafruit/ArduinoCore-samd/actions)
+# Arduino Core for SAMD21 CPU for FundyLab boards
 
 This repository contains the source code and configuration files of the Arduino Core
-for Atmel's SAMD21 and SAMD51 processor (used on the Arduino/Genuino Zero, MKR1000 and MKRZero boards).
+for Atmel's SAMD21 processor (used on the Arduino/Genuino Zero boards).
 
-In particular, this adds support for the Adafruit SAMD Boards such as the Feather M0
+This adds support for the FundyLab SAMD Boards such as fundylab_plain_samd21
+branched from Adafruit GitHub reposirtory below. -Thank you Ada!
+https://github.com/adafruit/ArduinoCore-samd
+
+FundyLab plain board:
+"plain" means no LED accesses by bootloader.
+As a result, you can use PA17, PB03, PA27 ports(case SAMD21G18A) on your Arduino sketch.
+
+## Changed
+Changed the product name to FundyLab's products
+Changed the CMSIS version used 
+Changed some other customizations such as FundlLab plain
+Deleted "post_install.bat"
 
 ## Bugs or Issues
 
